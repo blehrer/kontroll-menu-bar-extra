@@ -17,6 +17,7 @@
 		F3BDE0D12D7FCF7800D26B3D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BDE0C82D7FCF7800D26B3D /* Preview Assets.xcassets */; };
 		F3BDE0D22D7FCF7800D26B3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BDE0CA2D7FCF7800D26B3D /* Assets.xcassets */; };
 		F3BDE0D62D7FE14D00D26B3D /* keymapp.protoc in Resources */ = {isa = PBXBuildFile; fileRef = F3BDE0D52D7FE14500D26B3D /* keymapp.protoc */; };
+		F3BDE0D92D80F9E200D26B3D /* keymapp.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BDE0D82D80F9E200D26B3D /* keymapp.pb.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F3BDE0CC2D7FCF7800D26B3D /* kontroll_menu_bar_extra.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kontroll_menu_bar_extra.entitlements; sourceTree = "<group>"; };
 		F3BDE0CD2D7FCF7800D26B3D /* kontroll_menu_bar_extraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kontroll_menu_bar_extraApp.swift; sourceTree = "<group>"; };
 		F3BDE0D52D7FE14500D26B3D /* keymapp.protoc */ = {isa = PBXFileReference; lastKnownFileType = text; path = keymapp.protoc; sourceTree = "<group>"; };
+		F3BDE0D82D80F9E200D26B3D /* keymapp.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keymapp.pb.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -138,7 +140,7 @@
 		F3BDE0CE2D7FCF7800D26B3D /* kontroll-menu-bar-extra */ = {
 			isa = PBXGroup;
 			children = (
-				F3BDE0D52D7FE14500D26B3D /* keymapp.protoc */,
+				F3BDE0D72D80F28200D26B3D /* proto */,
 				F3BDE0C52D7FCF0B00D26B3D /* CoreData */,
 				F3BDE0C62D7FCF2B00D26B3D /* Menubar */,
 				F3BDE0CA2D7FCF7800D26B3D /* Assets.xcassets */,
@@ -159,6 +161,15 @@
 				F3BDE0A82D7FC6C700D26B3D /* kontroll-menu-bar-extraUITests */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		F3BDE0D72D80F28200D26B3D /* proto */ = {
+			isa = PBXGroup;
+			children = (
+				F3BDE0D82D80F9E200D26B3D /* keymapp.pb.swift */,
+				F3BDE0D52D7FE14500D26B3D /* keymapp.protoc */,
+			);
+			path = proto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +321,7 @@
 			files = (
 				F3BDE0C02D7FCA2A00D26B3D /* PopoverView.swift in Sources */,
 				F3BDE0C42D7FCAF100D26B3D /* StatusBarController.swift in Sources */,
+				F3BDE0D92D80F9E200D26B3D /* keymapp.pb.swift in Sources */,
 				F3BDE0952D7FC6C700D26B3D /* kontroll_menu_bar_extra.xcdatamodeld in Sources */,
 				F3BDE0922D7FC6C700D26B3D /* Persistence.swift in Sources */,
 				F3BDE0CF2D7FCF7800D26B3D /* ContentView.swift in Sources */,

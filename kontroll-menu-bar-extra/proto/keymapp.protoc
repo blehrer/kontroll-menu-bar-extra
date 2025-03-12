@@ -115,4 +115,4 @@ service KeyboardService {
     rpc IncreaseBrightness (IncreaseBrightnessRequest) returns (BrightnessUpdateReply) {}
     // Decreases the brightness of the keyboard.
     rpc DecreaseBrightness (DecreaseBrightnessRequest) returns (BrightnessUpdateReply) {}
-}
+} 

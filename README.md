@@ -11,3 +11,13 @@ Small Swift app that can interact with ZSA's [Keymapp](https://formulae.brew.sh/
     - [GitHub: apple/swift-protobuf](https://github.com/apple/swift-protobuf)
 - Swift + Rust
     - [Medium: "A Swiftly Oxidizing Tutorial" by @kennethyoel](https://medium.com/@kennethyoel/a-swiftly-oxidizing-tutorial-44b86e8d84f5)
+
+# TODO's
+- [ ] convert the script below into a build task
+```sh
+brew install protobuff protoc-gen-swift-grpc
+cd ./kontroll-menu-bar-extra/proto/
+wget https://raw.githubusercontent.com/zsa/kontroll/refs/heads/main/proto/keymapp.proto
+protoc --plugin $(which protoc-gen-swift) --swift_out . keymapp.protoc
+rm keymapp.proto
+```
